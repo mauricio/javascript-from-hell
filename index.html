@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JavaScript from Hell - tudo pra você nunca mais querer usar JavaScript nessa vida</title>
+	<title>JavaScript from Hell - everything so you'll never want to use JavaScript again</title>
 
-	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="description" content="Give up, there's no hope beyond JavaScript!">
 	<meta name="author" content="Maurício Linhares">
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -45,14 +45,14 @@
 		<div class="slides">
 			<section>
 				<h1 class='on-fire'>JavaScript from Hell</h1>
-				<h3>Ainda dá tempo de desistir</h3>
+				<h3>There's still hope for you to give up</h3>
 				<p>
 					<small><a href="http://mauricio.github.io/">Maurício Linhares</a> / <a href="http://twitter.com/mauriciojr">@mauriciojr</a></small>
 				</p>
 			</section>
 
 			<section>
-				<h2>Comparando coisas em JavaScript?</h2>
+				<h2>Equality in JavaScript?</h2>
 				<pre><code data-trim class="js">
 var jose = {"nome":"José"};
 var maria =  {"nome":"José"};
@@ -72,7 +72,7 @@ jose.nome == maria.nome
 			</section>
 
 			<section>
-				<h2><em class="code">new</em> ainda vai morder você</h2>
+				<h2><em class="code">new</em> will bite you</h2>
 				<pre><code data-trim class="js">
 function Person(name) {
 	this.name = name;
@@ -93,7 +93,7 @@ other.hello()
 			</section>
 
 <section>
-	<h2>hack bizarro pra você não cair no problema</h2>
+	<h2>hack to fix the forgot to use <em class="code">new</em> issue</h2>
 	<pre><code data-trim class="js">
 function Person(name) {
 	if ( !(this instanceof Person) )
@@ -113,7 +113,7 @@ other.hello()
 </section>
 
 <section>
-	<h2> de <em class="code">vars</em> pra variáveis globais em um pulo</h2>
+	<h2> from <em class="code">vars</em> global vars in a single step</h2>
 	<pre><code data-trim class="js">
 name = "Mario";
 var otherName = "Luigi";
@@ -136,7 +136,7 @@ console.log(princess);
 </section>
 
 <section>
-	<h2> <em class="code">with</em> nunca mais</h2>
+	<h2> <em class="code">with</em> never again</h2>
 	<pre><code data-trim class="js">
 var obj = {"name":"Rex Colt"};
 with(obj) {
@@ -165,7 +165,7 @@ console.log(surname);
 </section>
 
 <section>
-	<h2> ah, mas em <em class="code">ruby</em> é assim também</h2>
+	<h2> but ruby does it the same way, doesn't it?</h2>
 	<pre><code data-trim class="js">
 [] + []
 > []
@@ -207,7 +207,7 @@ client.connect(function(err) {
 </section>
 
 <section>
-	<h2> como isso seria com promises?</h2>
+	<h2> what about promises?</h2>
 	<pre><code data-trim class="scala">
 val handler = new DatabaseConnectionHandler( ... )
 val result = handler.connect
@@ -222,7 +222,7 @@ val result = handler.connect
 </section>
 
 <section>
-	<h2> escopo? o que é isso?</h2>
+	<h2> scope? what's that?</h2>
 	<pre><code data-trim class="js">
 var items = [1, 2, 3];
 for ( var x = 0; x < items.length; x++ ) {
@@ -235,7 +235,7 @@ console.log(item);
 </section>
 
 <section>
-	<h2> somente funções criam um novo escopo</h2>
+	<h2> only functions create a new scope</h2>
 	<pre><code data-trim class="js">
 var items = [1, 2, 3];
 items.forEach( function(item) {
@@ -248,7 +248,7 @@ console.log(item);
 </section>
 
 <section>
-	<h2>cuidado com como você define as coisas - antes</h2>
+	<h2>careful with how you define stuff - before</h2>
 	<pre><code data-trim class="js">
 
 myFunction();
@@ -266,7 +266,7 @@ var myFunction = function () {
 </section>
 
 <section>
-	<h2>cuidado com como você define as coisas - depois</h2>
+	<h2>careful with how you define stuff - after</h2>
 	<pre><code data-trim class="js">
 
 function myFunction() {
@@ -284,7 +284,7 @@ myFunction();
 </section>
 
 <section>
-	<h2>e agora?</h2>
+	<h2>what now?</h2>
 	<pre><code data-trim class="js">
 
 ( function myFunction() {
@@ -298,25 +298,25 @@ myFunction();
 </section>
 
 <section>
-	<h1>e tem mais?</h1>
+	<h1>what else?</h1>
 	<ul>
-		<li>Herança</li>
+		<li>inheritance</li>
 		<li>this</li>
-		<li>manipulação do DOM</li>
+		<li>DOM manipulation</li>
 		<li>debugging</li>
 	</ul>
 </section>
 
 
 <section>
-	<h1>JavaScript é uma merda então?</h1>
+	<h1>is there hope for JavaScript?</h1>
 </section>
 
 <section>
-	<h1>Não</h1>
+	<h1>Yes!</h1>
 	<h3>
-		Mas é importante conhecer os problemas, as alternativas e o que
-		outras pessoas, outras linguagens e outras comunidades fazem.
+		But it's important to understand the problems, alternatives
+		and what other people, languages and communities are doing.
 	</h3>
 </section>
 
